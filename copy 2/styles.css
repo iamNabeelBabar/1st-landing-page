@@ -1,0 +1,649 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* For main container whose width is 100vw and height is 100vh and contain main image */
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("background.png");
+    background-size:cover;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* For Header */
+
+header{
+    /* border: 2px solid black; */
+    width: 80%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+/* For Logo */
+
+.logo{
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* For Navbar  */
+
+.navbar{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    width: auto;
+}
+.navbar a{
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+}
+
+/* Media Queries of Navbar */
+@media (max-width:800px){
+    .navbar{
+        display: none;
+    }
+}
+
+
+/* Authorization Buttons */
+
+.auth-button{
+    width: 20%;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.auth-button button a{
+    color: rgb(209, 206, 206);
+    text-decoration: none;
+}
+
+.login-btn{
+    background: none;
+    border: none;
+}
+.started-btn{
+    cursor: pointer;
+    min-width: 120px;
+    padding: 7px;
+    width: 120px;
+    background-color: rgb(183, 24, 223);
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+/* Media Queries for header */
+
+@media (max-width:768px){
+    
+    header{
+        width: 100%;
+        justify-content:center;
+        gap: 50px;
+
+    }
+}
+
+@media (max-width:500px){
+    
+    header{
+        width: 100%;
+        justify-content:center;
+        gap: 50px;
+
+    }
+}
+
+
+/* for main div */
+
+.hero{
+    /* border: 2px solid black; */
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    /* align-items: center; */
+    padding-top: 10vh;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+/* Main Box */
+.main-box{
+    margin-left: 3vw;
+    max-width: 50vw;
+}
+.main-box h1{
+    font-size: 70px;
+    font-weight:900;
+}
+.main-box p{
+    margin-top: 2vh;
+    color: rgb(242, 236, 236);
+}
+
+/* Main buttons */
+
+.main-button{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    margin-top: 5vh;
+
+}
+.main-button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+
+}
+.trial-btn{
+    padding: 12px 50px;
+    background-color: rgb(197, 71, 243);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.sign-btn{
+
+    padding: 12px 40px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 8px;
+        cursor: pointer;
+
+}
+
+
+
+/* Menu Buttons */
+
+.menu{
+    /* border: 2px solid ; */
+    border-radius: 8px;
+    margin: 18px;
+    padding: 12px 18px;
+    background: linear-gradient(
+  to bottom,
+  rgba(255, 250, 250, 0.738) 0%,     /* Top - 50% transparent */
+  rgb(145, 143, 143) 35%,       /* Middle - fully solid */
+  rgba(255, 247, 247, 0.045) 100%     /* Bottom - 30% transparent */
+);
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 300px;
+    
+}
+span{
+    color:rgb(10, 9, 9);
+    background-color: rgb(34, 250, 66);
+    border-radius: 50%;
+    position: relative;
+    top: 4px;
+    right: 5px;
+}
+
+/* For Container 1 */
+
+.container1{
+    color: black;
+    /* border: 2px solid black; */
+    width: 70vw;
+    height: 20vh;
+    display: flex;
+    padding-top: 20px;
+    margin-left: 20vw;
+    justify-content: center;
+    align-items: center;
+    gap: 20vw;
+}
+
+.container1 h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    max-width: 200px;
+}
+
+.container1 p{
+    max-width: 540px;
+    color: rgb(58, 56, 56);
+}
+
+
+/* For Container 2 */
+
+.container2{
+    width: 80vw;
+    display: flex;
+    /* border: 2px solid black; */
+    height:30vh ;
+    margin-left: 15vw;
+    gap: 14px;
+    margin-top: 5vh;
+    /* margin-left: 5vw; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box2{
+    padding-top: 18px;
+    padding-left: 20px;
+    width: 22vw;
+    font-size: lighter;
+    height: 25vh;
+    color: rgb(13, 13, 58);
+    /* border: 2px solid black; */
+    border-radius: 8px;
+    background-color: rgba(220, 221, 221, 0.799);
+
+}
+.icon{
+    color: white;
+}
+.box2 i{
+    background-color:rgb(13, 13, 58) ;
+    padding: 11px;
+    border-radius: 50%;
+}
+
+.container3{
+    /* border: 2px solid black; */
+    width: 70vw;
+    height: 55vh;
+    display: flex;
+    margin-top: 5vh;
+    margin-left: 21vw;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 5vw;
+}
+
+.cont3-img{
+    width: 30vw;
+    height: 55vh;
+    border-radius: 8px;
+    background-image: url("container3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cont3-main{
+    color: black;
+    height: 50vh;
+    width: 50vw;
+}
+
+.cont3-main h1{
+    font-size: 35px;
+}
+
+.cont3-main p{
+    color: rgb(46, 46, 46);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.cont3-main b{
+    display: block;
+}
+.icon3{
+    background-color: rgb(0, 136, 247);
+    color: white;
+    margin: 0 5px;
+
+}
+
+.read{
+    color: rgb(174, 15, 144);
+    position: relative;
+    top: 8px;
+    text-decoration: none;
+
+}
+.read i{
+    margin-left: 7px;
+}
+
+/* for Container 4 */
+
+.container4 {
+  margin-top: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  /* background-color: #f7f7; optional for light background */
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.section-title .line {
+  flex: 1;
+  height: 1px;
+  background-color: #bdbdc2;
+  max-width: 100px;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+  color: #000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* For Container 5 */
+
+.container5{
+    /* border: 2px solid black; */
+    width: 70vw;
+    margin-left: 20vw;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 8 columns */
+    grid-template-rows: repeat(2, auto);   /* 2 rows */
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+}
+.box5{
+    /* border: 2px solid red; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo1{
+    background-image: url("icons/1200px-WikiHow_logo\ 2.png");
+}
+.logo2{
+    background-image: url("icons/5841c6fba6515b1e0ad75aaa\ 1.png");
+}
+.logo3 {
+  background-image: url("icons/7046847_preview\ 1.png");
+}
+.logo4 {
+  background-image: url("icons/animeplanet-png\ \(2\)\ 2.png");
+}
+.logo5 {
+  background-image: url("icons/ask-logo-png-transparent\ 1.png");
+}
+.logo6 {
+  background-image: url("icons/ASK_fm_logo\ 1.png");
+}
+.logo7 {
+  background-image: url("icons/ghost-logo-dark-png\ 1.png");
+}
+.logo8 {
+  background-image: url("icons/medium_png\ 1.png");
+}
+.logo9 {
+  background-image: url("icons/MyAnimeList-logo\ 1.png");
+}
+.logo10 {
+  background-image: url("icons/png-transparent-reddit-logo-computer-icons-reddit-alien-text-orange-logo\ 1.png");
+}
+.logo11 {
+  background-image: url("icons/Stack_Exchange_logo_and_wordmark\ 1.png");
+}
+.logo12 {
+  background-image: url("icons/surface1.png");
+}
+.logo13 {
+  background-image: url("icons/writeas-logo-png\ 1.png");
+}
+.logo14 {
+  background-image: url("icons/1200px-WikiHow_logo\ 2.png");
+}
+
+
+/* For Container 6 */
+
+.container6{
+    /* border: 2px solid black; */
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+
+.search-content{
+/* border: 2px solid black; */
+width: 28vw;
+height: 40vh;
+color: black;
+padding-left: 20px;
+font-size:20px;
+margin-left: 12vw;
+}
+.search-content p{
+    color: rgb(52, 50, 50);
+    font-weight: lighter;
+    margin-top: 3vh;
+}
+.search-img{
+    /* border: 2px solid black; */
+    width: 50vw;
+    height: 60vh;
+    background-image: url("search\ img.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* For container 7 */
+
+.container7{
+    /* border: 2px solid black; */
+    width: 100vw;
+    height: 80vh;
+    background-color: #e7e7ea;
+    padding-top: 100px;
+}
+.cont7-text{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    color: black;
+}
+
+
+.stats{
+    max-width: 60vw;
+    color: black;
+    display: flex;
+    gap: 4vw;
+    position: relative;
+    top: 4vw;
+    left: 20vw;
+    gap: 10vw;
+}
+.stat-box h2{
+    color: rgb(234, 0, 255);
+    font-size: xx-large;
+}
+.stat-box p{
+    color: #57575b;
+}
+
+.container-8{
+    border-radius: 8px;
+    background: #833AB4;
+    background: #3d90fc;
+    background: linear-gradient(34deg, rgba(61, 144, 252, 1) 17%, rgba(252, 61, 211, 1) 67%, rgba(252, 69, 249, 1) 100%);
+    width: 60vw;
+    height: 30vh;
+    position: relative;
+    left: 22vw;
+    top: -16vh;
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.container-8 p{
+    max-width: 30vw;
+}
+
+.container-9{
+    background-color: #250844;
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    bottom: 30vh;
+    z-index: -1;
+    padding-top: 22vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont9-box{
+    /* border: 2px solid white; */
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    justify-content:center;
+}
+
+.identity{
+    width: 20vw;
+    height: 35vh;
+    background-color: white;
+    border-radius: 8px;
+    background-image: url("identity\ image.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.last{
+    border: 2px solid black;
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    background-color: #250844;
+}
+
+.blank{
+    width: 100vw;
+    height: 31vh;
+    position: absolute;
+    top: -31vh;
+    background: linear-gradient(34deg, rgba(61, 144, 252, 1) 17%, rgba(252, 61, 211, 1) 67%, rgba(252, 69, 249, 1) 100%);
+}
+.try-box{
+    /* border: 2px solid white; */
+    width: 60vw;
+    height: 60vh;
+    border-radius: 8px;
+    background-color: white;
+    position: absolute;
+    left: 20vw;
+    top: -45vh;
+    background: #faf5f5;
+    background: linear-gradient(18deg, rgba(250, 245, 245, 1) 48%, rgba(201, 61, 252, 1) 74%, rgba(100, 99, 233, 1) 93%, rgba(232, 0, 166, 1) 99%);
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    color: black;
+}
+.try-box h1{
+    font-size: xx-large;
+    padding: 30px;
+}
+
+.try-box p{
+    color: rgb(91, 88, 88);
+    padding: 30px;
+}
+
+.last-buttons{
+    padding: 30px;
+    display: flex;
+    gap:30px;
+}
+
+.email-btn{
+    width: 15vw;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    /* border: 1px solid rgb(49, 48, 48); */
+    background-color: transparent;
+}
+
+.google-btn{
+    color: white;
+    background-color: #3d90fc;
+    padding: 10px 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 9px;
+    border: none;
+    font-weight: bold;
+}
+
+.last-div{
+    /* border: 2px solid white; */
+    width: 60vw;
+    height: 30vh;
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+    display: flex;
+    gap: 6vw;
+    align-items: center;
+    justify-content: center;
+}
+.last-div h1{
+    padding-bottom: 3vh;
+}
+.last-div a{
+    text-decoration: none;
+    color: rgb(177, 175, 175);
+    padding-top: 10px;
+}
+
+/* Header */
+header{
+    color: rgb(243, 240, 240);
+    /* border-top: 2px solid rgb(147, 138, 138); */
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #250844;
+}
